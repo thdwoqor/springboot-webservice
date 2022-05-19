@@ -19,10 +19,17 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation "com.h2database:h2"
+    runtimeOnly 'com.h2database:h2'
+    // compile 방식과 차이점
+    // https://mvnrepository.com/
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'junit:junit:4.12'
 }
 
 tasks.named('test') {
