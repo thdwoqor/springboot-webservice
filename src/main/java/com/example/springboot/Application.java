@@ -12,3 +12,5 @@ public class Application{
     }
 }
 //https://velog.io/@linger0310/DDD
+
+// https://yellow4u.tistory.com/12 gradlew test
